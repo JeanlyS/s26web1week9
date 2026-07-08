@@ -57,3 +57,11 @@ h1{
     font-size:30px;
 }
 
+/* to style links */
+nav ul a{
+    background-color:rgb(28, 199, 202);
+    display:block;
+    width:100%;
+}
+
+
