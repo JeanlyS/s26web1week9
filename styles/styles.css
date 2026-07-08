@@ -47,6 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /****************************************************
         MOBILE STYLES
 ****************************************************/
@@ -55,7 +61,14 @@ table {
     padding:0 0.5em;
     /* you never want anything right up against the edge of the screen, so a small
     amount of padding on the left and right helps leave a bit of whitespace */
+
 }
+
+.large{
+    display:none;
+
+}
+
 
 h1{
     font-size:30px;
@@ -117,7 +130,7 @@ img{
     }
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:968px){
     /* the CSS in this media query will only apply to your site when the size of the
     screen is 768px wide or greater - since this is after the 600px media query,
     styles inside here will override it */
@@ -128,10 +141,45 @@ img{
 
     .container{
         width:100%;
-        max-width:800px;
+        max-width:1000px;
         margin:0 auto;
         background:white;
         /* this will center the container div in the browser window when
         the screen is wider than 800px */
     }
+
+
+    main{
+        width:75%;
+        float:left;
+    }
+
+    aside{
+        width:25%;
+        float:left;
+    }
+
+    footer{
+        clear:both;
+    }
+
+
+
+    .small{
+        display:none;
+    }
+
+    .large{
+        display:inline-block;
+    }
+
+
+    img{
+        width:50%;
+        float:left;
+    }
+
+
+
+
 }
