@@ -68,7 +68,7 @@ nav ul a{
     border-bottom:1px solid black;
 }
 
-nav ul a:hover{
+nav ul a:active{
     background-color:rgb(38, 27, 201);
     color:white;
 }
